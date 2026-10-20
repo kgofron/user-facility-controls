@@ -29,6 +29,16 @@ The last full classic Application Developer's Guide is the Base 3.16.2 edition: 
 
 The older name EPICS Record Reference Manual is the 3.13 book. Its page now points readers at the EPICS 7 record reference. Use IOC Component Reference for current record types and fields.
 
+## Screens, alarms, archive, and logbooks
+
+- Phoebus applications: <https://www.controlsystemstudio.org/applications/>
+- Phoebus alarm server: <https://control-system-studio.readthedocs.io/en/latest/services/alarm-server/doc/index.html>
+- Alarm Handler User's Guide: <https://epics.anl.gov/EpicsDocumentation/ExtensionsManuals/AlarmHandler/alhUserGuide-1.2.35/ALHUserGuide.html>
+- Archiver Appliance: <https://epicsarchiver.readthedocs.io/en/latest/>
+- Olog: <https://olog.readthedocs.io/en/latest/>
+- ELOG: <https://elog.psi.ch/elog/>
+- EPICS related software, for EDM, MEDM, and caQtDM: <https://docs.epics-controls.org/en/latest/software/epics-related-software.html>
+
 ## Motion
 
 - ioc-hkl: <https://github.com/hkl-projects/ioc-hkl>
@@ -52,7 +62,7 @@ The older name EPICS Record Reference Manual is the 3.13 book. Its page now poin
 
 ## Neutron data
 
-Add the public NeXus manual and the public SNS data-path papers when chapter 8 is drafted. Prefer proceedings and project docs over internal notes.
+Add the public NeXus manual and the public SNS data-path papers when chapter 11 is drafted. Prefer proceedings and project docs over internal notes.
 
 ## Facilities
 

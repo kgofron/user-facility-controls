@@ -46,7 +46,7 @@ RecCaster has to be loaded in the IOC. LabVIEW, PCAS, and other servers that are
 
 FREIA reports recsync on every IOC together with Channel Finder. ESS e3 documents the same pair. A Rust implementation and a Java receiver exist beside the Python receiver. The book only needs the split: a module in the IOC, a service that accepts the list, and a plugin that writes Channel Finder.
 
-`cfNameserver` is the one bridge from this catalog to a search. It is a PV Access name server that answers from Channel Finder data filled by recsync. It is younger and less active than the directory. Chapter 10 is where a name server belongs.
+`cfNameserver` is the one bridge from this catalog to a search. It is a PV Access name server that answers from Channel Finder data filled by recsync. It is younger and less active than the directory. Chapter 13 is where a name server belongs.
 
 ## Catalog and feeder
 
@@ -75,7 +75,7 @@ There is no public census. These are the deployments that show up in papers and 
 | FRIB diagnostics | A facility paper describes Channel Finder as their PV directory server. |
 | FREIA | Reports recsync on every IOC, with Channel Finder as the directory. |
 | ESS | e3 documents recsync. ESS contributors are active in the current Channel Finder and recsync repositories. |
-| SNS | Evaluated the catalog and did not adopt it for name resolution. That choice is chapter 10. |
+| SNS | Evaluated the catalog and did not adopt it for name resolution. That choice is chapter 13. |
 
 ## What the directory does not answer
 
@@ -83,7 +83,7 @@ An operator who has one name and wants the host that owns it does not query Chan
 
 `cainfo`, shipped with EPICS base, is the probe for that question. Point it at a name and it reports whether the channel connected, which host and port answered, the native type, the element count, and the access rights. It is a Channel Access client. Run it once, for one name, while troubleshooting. It does not remember the answer for the next client, and it does not quiet the network.
 
-PVmapper answers the same host question for every client. It is a Channel Access name server: clients send it their searches, it caches which IOC owns the PV, and later clients get the cached host instead of a fresh broadcast. It stores no properties and no tags. Chapter 10 treats it with the gateway and the classic name server, because the problem it solves is search traffic. Chapter 11 names `cainfo`, and caSnooper beside it, as the checks an on-call engineer runs when a name will not connect.
+PVmapper answers the same host question for every client. It is a Channel Access name server: clients send it their searches, it caches which IOC owns the PV, and later clients get the cached host instead of a fresh broadcast. It stores no properties and no tags. Chapter 13 treats it with the gateway and the classic name server, because the problem it solves is search traffic. Chapter 14 names `cainfo`, and caSnooper beside it, as the checks an on-call engineer runs when a name will not connect.
 
 A site that wants both a queryable catalog and quiet searches runs both layers. Channel Finder does not answer a search. PVmapper does not tell an application what a channel is for.
 

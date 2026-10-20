@@ -1,4 +1,4 @@
-# 10. Networks and the broadcast problem
+# 13. Networks and the broadcast problem
 
 Status: outlined
 
@@ -11,7 +11,7 @@ Explain why a large Channel Access network needs a gateway or a name server, and
 - How a client finds a PV: UDP search, and what happens when thousands of clients search for names that are gone.
 - CA Gateway as the usual boundary between networks, and the remaining path where a public-side client still causes private-side searches.
 - The classic CA name server, which wants a preloaded PV-to-host list.
-- PVmapper: no IOC change, in-memory cache, Channel Access only. The published SNS result: on the order of a million PVs, search traffic down by about an order of magnitude, and a second instance so the service is not a single point of failure. `cainfo` prints the host for one name and then forgets it. PVmapper is the service that keeps that answer for every client. The probe itself is chapter 11.
+- PVmapper: no IOC change, in-memory cache, Channel Access only. The published SNS result: on the order of a million PVs, search traffic down by about an order of magnitude, and a second instance so the service is not a single point of failure. `cainfo` prints the host for one name and then forgets it. PVmapper is the service that keeps that answer for every client. The probe itself is chapter 14.
 - Why Channel Finder was set aside for that particular problem: recsync does not cover every server SNS still runs.
 - cfNameserver as the pvAccess counterpart, younger, and dependent on the catalog in chapter 3.
 

@@ -17,7 +17,17 @@ One definition per term. Add an entry when a chapter first needs it. If two chap
 | areaDetector | EPICS framework for detectors that produce arrays. A driver fills NDArrays. Plugins display, process, and save them. |
 | NDArray | The array object areaDetector passes from a driver to plugins. |
 | HKL | Reciprocal-space indices used as the coordinates of a diffractometer scan. ioc-hkl exposes the motor-to-HKL calculation as PVs. |
-| Bluesky | Experiment orchestration layer used at NSLS-II and APS. It runs plans above EPICS via ophyd. |
+| Phoebus | The current Control System Studio client: displays, the alarm table, Data Browser, and a logbook entry. |
+| EDM | Extensible Display Manager. An older EPICS display tool still found on beamlines. |
+| MEDM | Motif Editor and Display Manager. Older than EDM, and still found on beamlines. |
+| Alarm Handler | The classic EPICS alarm client. It shows a configured alarm tree and accepts acknowledgements. |
+| Archiver Appliance | The EPICS archive used to store samples from large numbers of process variables. |
+| Channel Archiver | The older index-based EPICS archiver. The Archiver Appliance can still retrieve from some of its data sources. |
+| Olog | A logbook service used with Phoebus. A person writes the entry. |
+| ELOG | The PSI electronic logbook, used on its own and as a Phoebus logbook plug-in. |
+| Scan Server | SNS service that runs a submitted scan against process variables: set, wait, and loop, with pause, resume, and abort. |
+| Run control | The start and stop of a numbered neutron acquisition, including a pause when a watched value leaves its range. |
+| Bluesky | Experiment orchestration used at NSLS-II and APS. A plan sequences the hardware. The RunEngine makes that plan one run and emits the documents for the dataset. |
 | ophyd | Python device layer that maps hardware, usually EPICS PVs, into objects Bluesky plans can use. |
 | NeXus | Hierarchical scientific data format used for neutron and X-ray datasets. |
 | Personnel safety system | Interlock system that protects people. It is deliberately outside EPICS. |
