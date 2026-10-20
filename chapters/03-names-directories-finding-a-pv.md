@@ -34,9 +34,13 @@ Versions, the Java and Elasticsearch baseline, and the listen port belong in the
 
 Someone has to put the records into the directory. recsync is the live feed that does that from standard IOCs.
 
+[Figure: how Channel Finder is filled](../figures/channel-finder.md). RecCaster uploads the record list. RecCeiver writes the directory. Clients query that directory over HTTP. A read or a write still goes to the IOC.
+
 RecCaster is an EPICS support module loaded in the IOC. It waits for a server announcement, uploads the process database, and stays connected. RecCeiver is a standalone daemon. It announces itself, accepts the upload, and can log it, store it in sqlite, or push it to Channel Finder. After the upload the server keeps the IOC on a ping and drops a client that stops answering.
 
 An upload carries the EPICS base version, selected environment variables, and each record's name, type, description, and `info()` tags. That is enough to build a catalog entry. It is not a copy of the record's value.
+
+An IOC loads RecCaster by pointing `configure/RELEASE` at the module and adding `reccaster.dbd` plus the `reccaster` library in `src/Makefile`. The startup script loads the sync-status database. The cleaned lines are in [examples/reccaster-ioc.md](../examples/reccaster-ioc.md), taken from the public demo rather than from a facility IOC.
 
 RecCaster has to be loaded in the IOC. LabVIEW, PCAS, and other servers that are not standard EPICS IOCs do not join the feed unless someone writes a separate client for the same protocol. Those channels can still be inserted by hand or by another importer. Until then they are absent, and an application that trusts the directory will not offer them.
 
