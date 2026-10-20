@@ -1,4 +1,4 @@
-# 8. Protection systems that are deliberately not EPICS
+# 9. Protection systems that are deliberately not EPICS
 
 Status: outlined
 

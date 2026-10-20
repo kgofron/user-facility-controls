@@ -1,4 +1,4 @@
-# 9. Networks and the broadcast problem
+# 10. Networks and the broadcast problem
 
 Status: outlined
 

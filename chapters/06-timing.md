@@ -11,6 +11,7 @@ Treat timing as two different machines that both have to meet the detector.
 - Neutron case: a proton pulse, choppers that select energy, and a detector that timestamps events against that pulse. The chopper control system is often its own machine that EPICS supervises.
 - Photon case: a storage-ring revolution clock and an event system that beamline hardware locks to. The beamline consumes accelerator timing. It does not operate the ring.
 - What fails when timing is wrong: a dataset that looks complete and is not sortable.
+- Chapter 7 uses this time base twice: neutron event timestamps, and time-of-flight histograms on a Serval pixel detector.
 
 ## Stays out
 

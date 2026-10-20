@@ -2,7 +2,7 @@
 
 A manuscript on how controls actually run at a neutron source or a synchrotron.
 
-EPICS is the spine: records, IOCs, Channel Access, and PV Access. The book is the map around that layer. Naming, screens, alarms, the archive, motion, sample environment, timing, the handoff to user data, protection, networks, and on-call operations.
+EPICS is the spine: records, IOCs, Channel Access, and PV Access. The book is the map around that layer. Naming, screens, alarms, the archive, motion, sensors, detectors, timing, the handoff to user data, protection, networks, and on-call operations.
 
 The reader is a new controls engineer, or a beamline scientist who already knows that records exist and still cannot run a shift.
 

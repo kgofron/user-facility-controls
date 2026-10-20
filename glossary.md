@@ -12,6 +12,9 @@ One definition per term. Add an entry when a chapter first needs it. If two chap
 | recsync | Live feed that uploads an IOC's record list to a receiver, which can fill Channel Finder. Standard IOCs load RecCaster. LabVIEW and other nonstandard servers do not join unless a separate client is written. |
 | PVmapper | Channel Access name server. Clients send searches to it; it caches which host owns a PV. It does not store properties or tags. |
 | CA Gateway | Proxy between a client network and an IOC network. It is an access boundary. A client on the public side can still cause searches on the private side. |
+| areaDetector | EPICS framework for detectors that produce arrays. A driver fills NDArrays. Plugins display, process, and save them. |
+| NDArray | The array object areaDetector passes from a driver to plugins. |
+| HKL | Reciprocal-space indices used as the coordinates of a diffractometer scan. ioc-hkl exposes the motor-to-HKL calculation as PVs. |
 | Bluesky | Experiment orchestration layer used at NSLS-II and APS. It runs plans above EPICS via ophyd. |
 | ophyd | Python device layer that maps hardware, usually EPICS PVs, into objects Bluesky plans can use. |
 | NeXus | Hierarchical scientific data format used for neutron and X-ray datasets. |

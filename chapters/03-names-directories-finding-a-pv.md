@@ -16,7 +16,7 @@ Explain how a flat namespace of hundreds of thousands of names becomes something
 
 ## Stays out
 
-- The Channel Access search path and broadcast load. That is chapter 9.
+- The Channel Access search path and broadcast load. That is chapter 10.
 - A deploy guide. Versions and ports live in the companion note.
 
 ## Draws on

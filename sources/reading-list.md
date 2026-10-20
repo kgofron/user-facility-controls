@@ -22,15 +22,30 @@ Published papers, talks, and public manuals. Internal notes do not go here.
 - EPICS documentation: <https://docs.epics-controls.org/>
 - Application Developer's Guide, as linked from the EPICS documentation set for the Base version a facility actually runs.
 
+## Motion
+
+- ioc-hkl: <https://github.com/hkl-projects/ioc-hkl>
+- hkl library: <https://repo.or.cz/hkl.git>
+- hklpy: <https://github.com/bluesky/hklpy>
+
+## Detectors
+
+- areaDetector: <https://github.com/areaDetector/areaDetector>
+- areaDetector documentation: <https://areadetector.github.io/areaDetector/index.html>
+- ADTimePix3 (ADServal): <https://github.com/areaDetector/ADTimePix3>
+
+## Deployment
+
+- systemdIOC: <https://github.com/kgofron/systemdIOC>
+
 ## Photon experiment orchestration
 
 - Bluesky: <https://blueskyproject.io/bluesky/>
 - ophyd: <https://blueskyproject.io/ophyd/>
-- areaDetector: <https://areadetector.github.io/master/>
 
 ## Neutron data
 
-Add the public NeXus manual and the public SNS data-path papers when chapter 7 is drafted. Prefer proceedings and project docs over internal notes.
+Add the public NeXus manual and the public SNS data-path papers when chapter 8 is drafted. Prefer proceedings and project docs over internal notes.
 
 ## Facilities
 
