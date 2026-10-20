@@ -20,8 +20,14 @@ Published papers, talks, and public manuals. Internal notes do not go here.
 
 ## EPICS
 
-- EPICS documentation: <https://docs.epics-controls.org/>
-- Application Developer's Guide, as linked from the EPICS documentation set for the Base version a facility actually runs.
+Two manuals cover the layer this book uses and does not rewrite. Cite the edition that matches the Base version on the IOC being discussed. Current EPICS 7 editions:
+
+- Application Developer's Guide: <https://docs.epics-controls.org/en/latest/appdevguide/AppDevGuide.html>
+- IOC Component Reference, the current record reference: <https://docs.epics-controls.org/projects/base/en/latest/ComponentReference.html>
+
+The last full classic Application Developer's Guide is the Base 3.16.2 edition: <https://epics.anl.gov/base/R3-16/2-docs/AppDevGuide/AppDevGuide.html>
+
+The older name EPICS Record Reference Manual is the 3.13 book. Its page now points readers at the EPICS 7 record reference. Use IOC Component Reference for current record types and fields.
 
 ## Motion
 
