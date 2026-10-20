@@ -14,6 +14,7 @@ Published papers, talks, and public manuals. Internal notes do not go here.
 - CA Gateway: <https://github.com/epics-extensions/ca-gateway>
 - cfNameserver: <https://github.com/ChannelFinder/cfNameserver>
 - PV Info: <https://github.com/ChannelFinder/pvinfo>
+- caSnooper: <https://epics.anl.gov/extensions/caSnooper/index.php>
 - EPICS related software: <https://docs.epics-controls.org/en/latest/software/epics-related-software.html>
 - K. Vodopivec and D. Cashion, “Operational experience and optimization techniques for large EPICS control system environments,” ICALEPCS 2025, TUBR004. <https://proceedings.jacow.org/icalepcs2025/pdf/TUBR004.pdf>
 

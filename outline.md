@@ -75,7 +75,7 @@ These are examples inside a chapter, not chapters of their own. Link the public 
 
 ## Companion note
 
-[channelfinder-pvmapper](https://github.com/kgofron/channelfinder-pvmapper) is a tool comparison, not a chapter. Chapter 3 takes Channel Finder and recsync. Chapter 10 takes PVmapper, the classic CA name server, and CA Gateway. `cfNameserver` is the one-line bridge: a pvAccess name server backed by the Channel Finder catalog.
+[channelfinder-pvmapper](https://github.com/kgofron/channelfinder-pvmapper) is a tool comparison, not a chapter. Chapter 3 takes Channel Finder and recsync. Chapter 10 takes PVmapper, the classic CA name server, and CA Gateway. `cainfo` asks the same host question as PVmapper and then forgets the answer; it belongs with on-call troubleshooting in chapter 11. `cfNameserver` is the one-line bridge: a pvAccess name server backed by the Channel Finder catalog.
 
 ## Next
 
