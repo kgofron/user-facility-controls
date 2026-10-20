@@ -12,7 +12,7 @@ Describe what changes between a working IOC and a shift that survives the night.
 - EPICS as the operator face for a process that is not an IOC. The worked example is systemdIOC: start, stop, reset a failed state, and read status for a systemd service. The motivating service is Serval, the detector process behind the driver in chapter 10.
 - A change that is safe to make during a user shift, and a change that waits.
 - What the on-call engineer actually does with the tools from earlier chapters: the screen, the alarm, the archive, the logbook, and a search that is quiet enough to use.
-- Troubleshooting a single name: `cainfo` for the host, type, and access rights; caSnooper when the question is who is searching. If the searches themselves are the outage, the fix is the name server in chapter 13.
+- Troubleshooting a single name: `cainfo` for the host, type, and access rights; caSnooper when the question is who is searching. The comparison of those probes with the name servers is chapter 13. If the searches themselves are the outage, the fix is the name server there, not another probe.
 - Handoff to the next shift: what must be written down because the control system will not remember it.
 
 ## Stays out

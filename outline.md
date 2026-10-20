@@ -83,7 +83,7 @@ These are examples inside a chapter, not chapters of their own. Link the public 
 ## Next
 
 1. Lock the two example instruments from published sources.
-2. Draft chapter 13, then finish chapter 3. The comparison note and Vodopivec and Cashion, ICALEPCS 2025, TUBR004, already carry the public facts.
+2. Finish the gateway boundary in chapter 13. The host-finding comparison, including `cainfo` and PVmapper, is drafted. The comparison note and Vodopivec and Cashion, ICALEPCS 2025, TUBR004, carry the public facts.
 3. Draft chapter 10 from the public areaDetector and ADTimePix3 repositories, then chapter 11: neutron run, event data, and NeXus beside Bluesky and ophyd.
 4. Add glossary entries as each chapter is drafted.
 5. Sensitivity pass on chapters 12 and 13 before any push. Roles and patterns only.
