@@ -29,6 +29,11 @@ The last full classic Application Developer's Guide is the Base 3.16.2 edition: 
 
 The older name EPICS Record Reference Manual is the 3.13 book. Its page now points readers at the EPICS 7 record reference. Use IOC Component Reference for current record types and fields.
 
+PV Access clients, and the PVXS equivalents:
+
+- PV Access repositories: <https://docs.epics-controls.org/en/latest/pv-access/overview.html>
+- PVXS command-line tools: <https://epics-base.github.io/pvxs/cli.html>
+
 ## Screens, alarms, archive, and logbooks
 
 - Phoebus applications: <https://www.controlsystemstudio.org/applications/>

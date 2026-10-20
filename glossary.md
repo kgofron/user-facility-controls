@@ -9,7 +9,9 @@ One definition per term. Add an entry when a chapter first needs it. If two chap
 | Process variable (PV) | A named control value served by an IOC or another Channel Access or PV Access server. |
 | IOC | Input/Output Controller. The process that loads a record database and serves its PVs. |
 | Channel Finder | REST directory of channel names, properties, and tags. It does not answer Channel Access searches. |
-| cainfo | EPICS base client that prints, for one name, whether it connected, which host answered, and the type, count, and access rights. |
+| cainfo | Channel Access client that prints, for one name, whether it connected, which host answered, and the type, count, and access rights. |
+| pvinfo | PV Access client that prints, for one name, the server and the structure of the value. Not the Channel Finder web page called PV Info. |
+| PVXS | The newer C++ implementation of PV Access. Its `pvxinfo` and `pvxget` commands match `pvinfo` and `pvget`. |
 | caSnooper | Diagnostic that reports Channel Access search requests seen on the network. |
 | recsync | Live feed that uploads an IOC's record list to a receiver, which can fill Channel Finder. Standard IOCs load RecCaster. LabVIEW and other nonstandard servers do not join unless a separate client is written. |
 | PVmapper | Channel Access name server. Clients send searches to it; it caches which host owns a PV. It does not store properties or tags. |

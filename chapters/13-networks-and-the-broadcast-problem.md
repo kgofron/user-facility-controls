@@ -42,7 +42,7 @@ CA Gateway is the usual boundary between a client network and the IOC network. I
 
 caSnooper decodes Channel Access search requests. It reports who is searching. It does not answer the search. SNS used it, then built a longer-running traffic analyzer. Chapter 14 is where an on-call engineer runs `cainfo` or caSnooper. If those probes show that the searches themselves are the outage, the fix is a name server, not another probe.
 
-`pvlist`, shipped with PV Access, enumerates names on servers it can already see. It is a discovery check, not a directory and not a name server.
+`pvlist`, shipped with PV Access, enumerates servers, and then the names on a server it can already see. It is a discovery check, not a directory and not a name server. `pvxlist` is the PVXS command for that check. `pvxvct` watches PV Access search and beacon traffic, which is the PV Access cousin of caSnooper. The command pairs, including `pvinfo` and `pvxinfo`, are the table in chapter 2.
 
 ## Still to write
 

@@ -62,7 +62,7 @@ These are examples inside a chapter, not chapters of their own. Link the public 
 | | File | Job |
 | --- | --- | --- |
 | 1 | [chapters/01-what-the-facility-controls.md](chapters/01-what-the-facility-controls.md) | What is being controlled, and where the safety boundary sits |
-| 2 | [chapters/02-epics-as-the-common-layer.md](chapters/02-epics-as-the-common-layer.md) | Records, IOCs, Channel Access, and PV Access |
+| 2 | [chapters/02-epics-as-the-common-layer.md](chapters/02-epics-as-the-common-layer.md) | Records, IOCs, and the Channel Access / PV Access pairs. EPICS 7 is not its own chapter |
 | 3 | [chapters/03-names-directories-finding-a-pv.md](chapters/03-names-directories-finding-a-pv.md) | Channel Finder, recsync, and finding a PV |
 | 4 | [chapters/04-screens.md](chapters/04-screens.md) | Phoebus, EDM, and MEDM |
 | 5 | [chapters/05-alarms.md](chapters/05-alarms.md) | Alarm Handler and the Phoebus alarm server |
