@@ -28,7 +28,7 @@ The questions the directory is for are the ones a screen, an alarm tree, or an a
 - Select every channel with a given tag or property, such as an archive policy or an alarm group.
 - Show a human label, a location, or an IOC name next to a channel without encoding all of that in the PV name.
 
-Versions, the Java and Elasticsearch baseline, and the listen port belong in the project documentation and in the companion comparison, not here. They move. The job does not.
+Install steps and the listen port stay in the project documentation. The comparison below records the public releases as of 19 October 2026. Those dates move. The two jobs do not.
 
 ## recsync
 
@@ -47,6 +47,35 @@ RecCaster has to be loaded in the IOC. LabVIEW, PCAS, and other servers that are
 FREIA reports recsync on every IOC together with Channel Finder. ESS e3 documents the same pair. A Rust implementation and a Java receiver exist beside the Python receiver. The book only needs the split: a module in the IOC, a service that accepts the list, and a plugin that writes Channel Finder.
 
 `cfNameserver` is the one bridge from this catalog to a search. It is a PV Access name server that answers from Channel Finder data filled by recsync. It is younger and less active than the directory. Chapter 10 is where a name server belongs.
+
+## Catalog and feeder
+
+Channel Finder is the searchable catalog. recsync is how a standard IOC fills that catalog. They are one stack. The catalog stores names, properties, and tags. The feeder pushes the live record list. Neither one answers a Channel Access search.
+
+| | Channel Finder | recsync |
+| --- | --- | --- |
+| Job | REST directory of channel names, properties, and tags | Push live IOC record lists to a server |
+| On the wire | HTTP. Clients still use Channel Access or PV Access to read the PV | UDP announcement, then a TCP upload |
+| IOC change | None. It is a service | Load RecCaster in the IOC |
+| What you learn | Name plus arbitrary properties and tags | Record name, type, description, `info()` tags, selected environment variables |
+| Store | Elasticsearch | Plugins: log, sqlite, or Channel Finder |
+| Stack | Java, Spring Boot | C client, Python server |
+| Public release, 19 Oct 2026 | 5.1.0, 2 June 2026 | 1.10.0, 11 August 2026 |
+
+GitHub star counts are a weak signal of laboratory use, so they stay in the companion comparison.
+
+### Who uses the catalog
+
+There is no public census. These are the deployments that show up in papers and project documentation.
+
+| Place | What is public |
+| --- | --- |
+| NSLS-II / BNL | Origin of Channel Finder, with HZB. A talk from that period reported on the order of 180,000 channels. |
+| ALS | PV Info, the Channel Finder web UI, is in production there. Channel Finder is the only required backend. |
+| FRIB diagnostics | A facility paper describes Channel Finder as their PV directory server. |
+| FREIA | Reports recsync on every IOC, with Channel Finder as the directory. |
+| ESS | e3 documents recsync. ESS contributors are active in the current Channel Finder and recsync repositories. |
+| SNS | Evaluated the catalog and did not adopt it for name resolution. That choice is chapter 10. |
 
 ## What the directory does not answer
 
